@@ -1,0 +1,61 @@
+
+@mixin stylesBox{
+    width: 50%;
+    max-width: 50%;
+  }  
+  
+@mixin stylesSection{
+    display: flex;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+  .container {
+    margin: auto;
+    word-wrap: break-word;
+
+    .header{
+        min-height: 100vh;
+        @include stylesSection;
+        background-color: #f9f9f9;
+
+    }
+
+    section{
+      min-height: 100vh;
+        @include stylesSection;
+    }
+
+    .codificacion{
+        background-color: #f7f7f7;
+
+    }
+
+    .reduccion{
+        background-color: #f2f2f2;
+    }
+
+    .ejemplo{
+        background-color: #020019;
+        color: #f4f4f4;
+    }
+
+
+    .text-container{
+      @include stylesBox;
+      padding: 0 5%;
+
+    }
+  
+    .img-container{
+      @include stylesBox;
+  
+      .img{
+        width: 100%;
+      }
+    }
+  
+  
+  }
+  
