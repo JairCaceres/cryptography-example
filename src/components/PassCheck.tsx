@@ -19,8 +19,7 @@ function PassCheck() {
     const text = evento.target.value;
     const encodedString = Buffer.from(text).toString('base64');
     const reduceString = crypto.SHA256(text);
-    const encriptString = crypto.AES.encrypt(encodedString, "secretKey");    
-    // const decryptString = crypto.AES.decrypt(encodedString, "secretKey");    
+    const encriptString = crypto.AES.encrypt(encodedString, "secretKey");
 
     setEncodedValue(evento.target.value == "" ? "" : encodedString);
     setReducepValue(evento.target.value == "" ? "" : reduceString.toString());
