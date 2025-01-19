@@ -27,16 +27,16 @@
         @include stylesSection;
     }
 
-    .codificacion{
+    .coding{
         background-color: #f7f7f7;
 
     }
 
-    .reduccion{
+    .reduction{
         background-color: #f2f2f2;
     }
 
-    .ejemplo{
+    .example{
         background-color: #020019;
         color: #f4f4f4;
     }
@@ -45,6 +45,10 @@
     .text-container{
       @include stylesBox;
       padding: 0 5%;
+
+      p{
+        line-height: 1.5;
+      }
 
     }
   

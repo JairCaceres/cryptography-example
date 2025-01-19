@@ -3,7 +3,7 @@ import PassCheck from './components/PassCheck'
 function App() {
   return (
     <>
-      <PassCheck></PassCheck>
+      <PassCheck />
     </>
   )
 }
